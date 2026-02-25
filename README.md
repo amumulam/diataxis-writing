@@ -2,6 +2,10 @@
 
 A comprehensive skill for creating high-quality documentation using the Diataxis framework.
 
+![GitHub Release](https://img.shields.io/github/v/release/amumulam/diataxis-writing)
+![ClawHub](https://img.shields.io/badge/ClawHub-diataxis--writing-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 ## Overview
 
 This skill provides complete guidance for creating documentation based on the [Diataxis framework](https://diataxis.fr), including:
@@ -12,57 +16,78 @@ This skill provides complete guidance for creating documentation based on the [D
 - **Checklists**: Quality checklists for each type
 - **Diagnosis tools**: Automatic document type detection
 
+## Features
+
+### 1. Type Diagnosis
+
+Automatically identifies the appropriate documentation type using the Diataxis Compass.
+
+### 2. Templates
+
+8 scenario-based templates:
+- Tutorial
+- How-to Guide
+- Reference
+- Explanation
+- Troubleshooting
+- Best Practices
+- Learning Notes
+- Exploratory Sharing
+
+### 3. Checklists
+
+Quality checklists for each documentation type to ensure consistency and completeness.
+
+### 4. Output Management
+
+Support for multiple output methods:
+- Chat response
+- Feishu documents (via MCP)
+- Local Markdown files
+- GitHub repositories
+
 ## Installation
 
-### Option 1: Install via ClawHub CLI (Recommended)
+### Option 1: Via ClawHub CLI (Recommended)
 
-**Quick install:**
+One-line installation with automatic updates:
+
 ```bash
 clawhub install diataxis-writing
 ```
 
-**Benefits:**
-- One-line installation
-- Automatic updates
-- Version management
+### Option 2: From GitHub Release
 
-### Option 2: Manual Installation
+Download the packaged skill file:
 
-**Step 1: Clone the repository**
+```bash
+# Download .skill file
+curl -L https://github.com/amumulam/diataxis-writing/releases/download/v1.0.0/diataxis-writing.skill \
+  -o /root/.openclaw/workspace/skills/diataxis-writing.skill
+```
+
+### Option 3: Manual Installation
+
+Clone and copy to workspace:
+
 ```bash
 git clone https://github.com/amumulam/diataxis-writing.git
 cd diataxis-writing
+cp -r . /root/.openclaw/workspace/skills/
 ```
 
-**Alternative: Download ZIP**
+### Verify Installation
+
 ```bash
-# Download and extract
-curl -L https://github.com/amumulam/diataxis-writing/archive/refs/heads/master.zip -o diataxis-writing.zip
-unzip diataxis-writing.zip
-cd diataxis-writing-master
+ls /root/.openclaw/workspace/skills/diataxis-writing/SKILL.md
+# Should exist
 ```
 
-**Step 2: Copy to OpenClaw workspace**
-```bash
-cp -r diataxis-writing /root/.openclaw/workspace/skills/
-```
+## Quick Start
 
-**Step 3: Verify installation**
-```bash
-ls /root/.openclaw/workspace/skills/diataxis-writing/
-# Should show: SKILL.md, CHANGELOG.md, checklist/, references/, templates/, scripts/
-```
-
-**Step 4: Restart OpenClaw (if needed)**
-```bash
-openclaw gateway restart
-```
-
-### Requirements
-
-- Python 3.8+
-- Node.js 18+ (for MCPorter integration)
-- Git (for manual installation)
+1. **Install**: `clawhub install diataxis-writing`
+2. **Trigger**: Mention "write a how-to guide" or "documentation type"
+3. **Follow**: The skill will guide you through Diataxis framework
 
 ## Usage
 
@@ -98,49 +123,12 @@ diataxis-writing/
 └── scripts/             # Helper scripts (2 files)
 ```
 
-## Features
+## Resources
 
-### 1. Type Diagnosis
-
-Automatically identifies the appropriate documentation type using the Diataxis Compass.
-
-### 2. Templates
-
-8 scenario-based templates:
-- Tutorial
-- How-to Guide
-- Reference
-- Explanation
-- Troubleshooting
-- Best Practices
-- Learning Notes
-- Exploratory Sharing
-
-### 3. Checklists
-
-Quality checklists for each documentation type to ensure consistency and completeness.
-
-### 4. Output Management
-
-Support for multiple output methods:
-- Chat response
-- Feishu documents (via MCP)
-- Local Markdown files
-- GitHub repositories
-
-## Development
-
-### Version History
-
-See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
-
-### Contributing
-
-This skill follows the [Diataxis framework](https://diataxis.fr) strictly. Any contributions should:
-
-1. Respect the official Diataxis terminology
-2. Maintain the four-type structure
-3. Include proper citations to diataxis.fr
+- [Diataxis Official Documentation](https://diataxis.fr)
+- [Diataxis GitHub Repository](https://github.com/evildmp/diataxis-documentation-framework)
+- [OpenClaw Documentation](https://docs.openclaw.ai)
+- [ClawHub Skill Page](https://clawhub.ai/skills/diataxis-writing)
 
 ## License
 
@@ -151,16 +139,3 @@ This skill is based on the official Diataxis framework from https://diataxis.fr.
 - **Diataxis Framework**: [Daniele Procida](https://vurt.eu) and contributors
 - **Official Documentation**: https://diataxis.fr
 - **Skill Creator Pattern**: Based on Anthropic's skill-creator guidelines
-
-## Resources
-
-- [Diataxis Official Documentation](https://diataxis.fr)
-- [Diataxis GitHub Repository](https://github.com/evildmp/diataxis-documentation-framework)
-- [OpenClaw Documentation](https://docs.openclaw.ai)
-- [ClawHub Skill Page](https://clawhub.ai/skills/diataxis-writing)
-
----
-
-**Version**: 1.0.0  
-**Last Updated**: 2026-02-25  
-**Maintainer**: Zhua Zhua
