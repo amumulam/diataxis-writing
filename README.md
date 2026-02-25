@@ -14,7 +14,13 @@ This skill provides complete guidance for creating documentation based on the [D
 
 ## Installation
 
-### For OpenClaw Users
+### Option 1: Install via ClawHub CLI (Recommended)
+
+```bash
+clawhub install diataxis-writing
+```
+
+### Option 2: Manual Installation
 
 Copy this skill to your workspace:
 
@@ -120,9 +126,10 @@ This skill is based on the official Diataxis framework from https://diataxis.fr.
 - [Diataxis Official Documentation](https://diataxis.fr)
 - [Diataxis GitHub Repository](https://github.com/evildmp/diataxis-documentation-framework)
 - [OpenClaw Documentation](https://docs.openclaw.ai)
+- [ClawHub Skill Page](https://clawhub.ai/skills/diataxis-writing)
 
 ---
 
-**Version**: 1.2.1  
+**Version**: 1.0.0  
 **Last Updated**: 2026-02-25  
 **Maintainer**: Zhua Zhua
