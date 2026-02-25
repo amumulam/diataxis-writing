@@ -16,22 +16,53 @@ This skill provides complete guidance for creating documentation based on the [D
 
 ### Option 1: Install via ClawHub CLI (Recommended)
 
+**Quick install:**
 ```bash
 clawhub install diataxis-writing
 ```
 
+**Benefits:**
+- One-line installation
+- Automatic updates
+- Version management
+
 ### Option 2: Manual Installation
 
-Copy this skill to your workspace:
+**Step 1: Clone the repository**
+```bash
+git clone https://github.com/amumulam/diataxis-writing.git
+cd diataxis-writing
+```
 
+**Alternative: Download ZIP**
+```bash
+# Download and extract
+curl -L https://github.com/amumulam/diataxis-writing/archive/refs/heads/master.zip -o diataxis-writing.zip
+unzip diataxis-writing.zip
+cd diataxis-writing-master
+```
+
+**Step 2: Copy to OpenClaw workspace**
 ```bash
 cp -r diataxis-writing /root/.openclaw/workspace/skills/
+```
+
+**Step 3: Verify installation**
+```bash
+ls /root/.openclaw/workspace/skills/diataxis-writing/
+# Should show: SKILL.md, CHANGELOG.md, checklist/, references/, templates/, scripts/
+```
+
+**Step 4: Restart OpenClaw (if needed)**
+```bash
+openclaw gateway restart
 ```
 
 ### Requirements
 
 - Python 3.8+
 - Node.js 18+ (for MCPorter integration)
+- Git (for manual installation)
 
 ## Usage
 
